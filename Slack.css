@@ -1,0 +1,73 @@
+html {
+  font-family: 'Source Code Pro', "Hiragino Kaku Gothic Pro", 'Menlo';
+  font-size: 12px;
+  background-color: #ffffff;
+  color: #525154;
+}
+body {
+  font-family: 'Source Code Pro', "Hiragino Kaku Gothic Pro", 'Menlo';	
+  background-color: #ffffff;
+}
+
+.url { color: #3da8ff; }
+.address {}
+.highlight {
+  font-weight: bold;
+  color: #e22170;
+}
+
+.line {
+  border-bottom: solid #ffffff 1px;
+  border-top: solid #ffffff 1px;
+}
+.line[alternate=even] {}
+.line[alternate=odd] {} 
+.line[highlight=true] {}
+
+.time {
+  color: #a3929f;
+}
+.place { color: #a3929f; }
+
+.sender[type=normal] { color: #8a3896; }
+.sender[type=myself] { color: #a3929f; }
+
+.message[type=privmsg] {}
+.message[type=notice] { color: #ecb438; }
+.message[type=action] { color: #b58900;}
+
+.message[type=system], .message[type=join], .message[type=part], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=invite], .message[type=wallops] {
+  color: #93a1a1; /* base1 */
+  float: right;
+  font-size: 90%;
+}
+
+.message[type=topic] {
+  color: #6c71c4; /* base1 */
+  float: right;
+  font-size: 90%;
+}
+
+.message[type=reply] { color: #2aa198; }   /* cyan */
+
+.message[type=error], .message[type=error_reply] { color: #cb4b16; } /* orange */
+.message[type=dcc_send_send] { color: #cb4b16; }                     /* orange */
+.message[type=dcc_send_receive] { color: #cb4b16; }                  /* orange */
+.message[type=debug_send] { color: #cb4b16; }                        /* orange */
+.message[type=debug_receive] { color: #cb4b16; }                     /* orange */
+
+/* 変なやつを消す */
+.line[type=mode] {display: none;}
+.message[type=mode] {display: none;}
+/*.line[alternate=even] { background-color: #fdf6e3; }
+.line[alternate=odd] { background-color: rgba(255,243,213,0.81); }
+*/
+.line:hover{
+  border-bottom: solid #e7c0b6 1px;
+  border-top: solid #e7c0b6 1px;
+}
+
+html[channelname="#Chu_Choco"].normal {
+}
